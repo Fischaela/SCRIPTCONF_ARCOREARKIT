@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://rawgit.com/aframevr/aframe/master/dist/aframe-master.min.js"></script>
+    <script src="https://rawgit.com/google-ar/three.ar.js/master/dist/three.ar.js"></script>
+    <script src="https://rawgit.com/chenzlabs/aframe-ar/master/dist/aframe-ar.js"></script>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <a-scene ar>
+      <a-assets>
+        <a-asset-item id="sun-mtl" src="assets/sun.mtl"></a-asset-item>
+        <a-asset-item id="sun-obj" src="assets/sun.onj"></a-asset-item>
+      </a-assets>
+      <a-entity ar-raycaster raycaster="objects:none"></a-entity>
+      <a-ring id="mark" rotation="-90 0 0" radius-inner="0.01" radius-outer="0.02"></a-ring>
+      <a-entity class="sun" obj-model="obj: #sun-obj;mtl: #sun-mtl" scale="0.1 0.1 0.1"></a-entity>
+    </a-scene>
+  </body>
+</html>
+

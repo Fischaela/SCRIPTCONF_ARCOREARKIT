@@ -9,6 +9,7 @@
     <script src="https://rawgit.com/aframevr/aframe/master/dist/aframe-master.min.js"></script>
     <script src="https://rawgit.com/google-ar/three.ar.js/master/dist/three.ar.js"></script>
     <script src="https://rawgit.com/chenzlabs/aframe-ar/master/dist/aframe-ar.js"></script>
+    <script src="https://dist.3d.io/3dio-js/1.1.x/3dio.min.js"></script>
     <script src="main.js" defer></script>
   </head>
   <body>
@@ -20,6 +21,7 @@
       <a-entity ar-raycaster raycaster="objects:none"></a-entity>
       <a-ring id="mark" rotation="-90 0 0" radius-inner="0.01" radius-outer="0.02"></a-ring>
       <a-entity class="sun" obj-model="obj: #sun-obj;mtl: #sun-mtl" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity io3d-furniture="id:10344b13-d981-47a0-90ac-f048ee2780a6" position="-2 0 -3.2" rotation="0 180 0"></a-entity>
     </a-scene>
   </body>
 </html>

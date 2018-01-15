@@ -1,6 +1,6 @@
 window.addEventListener('click', function () {
   var mark = document.querySelector('#mark');
-  const content = `<a-entity io3d-furniture="id:10344b13-d981-47a0-90ac-f048ee2780a6" rotation="0 180 0"></a-entity>`;
+  const content = `<a-entity io3d-furniture="id:aee3e802-1435-4a89-8e8b-d6057dbf3683" position="0 0 0" rotation="0 180 0"></a-entity>`;
   var el = document.createElement('a-entity');
 
   AFRAME.scenes[0].appendChild(el);

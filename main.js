@@ -5,6 +5,7 @@ var debug = document.querySelector('#debug');
 
 window.addEventListener('click', function () {
   var content = `<a-entity io3d-furniture="id:aee3e802-1435-4a89-8e8b-d6057dbf3683" shadow="cast:true"></a-entity>`;
+  debug.innerHTML = 'CLICK' + raycaster.components.cursor.intersection.point);
   content.setAttribute('position', raycaster.components.cursor.intersection.point);
   scene.appendChild(content);
 });

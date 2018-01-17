@@ -15,6 +15,7 @@ raycaster.addEventListener('raycaster-intersection', function (e) {
   mark.setAttribute('color', 'green');
 });
 
-raycaster.addEventListener('raycaster-intersection-cleared', function () {
+raycaster.addEventListener('raycaster-intersection-cleared', function (e) {
+  debug.innerHTML = 'CLEARED' + 'e' + e + 'detail' + e.detail + ' ' + JSON.stringify(e.detail) + 'intersections' + e.detail.intersections + 'point' + e.detail.intersections[0].point + ' ' + JSON.stringify(e.detail.intersections[0].point);
   mark.setAttribute('color', 'red');
 });

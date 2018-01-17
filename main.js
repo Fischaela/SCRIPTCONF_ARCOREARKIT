@@ -1,7 +1,7 @@
-var scene = document.querySelector('a-scene');
-var raycaster = document.querySelector('[ar-raycaster]');
-var mark = document.querySelector('#intersection');
-var debug = document.querySelector('#debug');
+let scene = document.querySelector('a-scene');
+let raycaster = document.querySelector('[ar-raycaster]');
+let mark = document.querySelector('#intersection');
+let debug = document.querySelector('#debug');
 
 window.addEventListener('click', function () {
   let content = `<a-entity io3d-furniture="id:cc71c2ff-a01c-459c-aadb-e9ff8d398212"></a-entity>`;

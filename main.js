@@ -10,12 +10,12 @@ raycaster.addEventListener('click', function () {
 });
 
 raycaster.addEventListener('raycaster-intersection', function (e) {
-  debug.innerHTML = 'e' + e + 'detail' + e.detail + ' ' + JSON.stringify(e.detail) + 'intersections' + e.detail.intersections + 'point' + e.detail.intersections[0].point + ' ' + JSON.stringify(e.detail.intersections[0].point);
+  debug.innerHTML = 'INTERSECTION' + JSON.stringify(e.detail.intersections[0].point);
   mark.setAttribute('position', e.detail.intersections[0].point);
   mark.setAttribute('color', 'green');
 });
 
 raycaster.addEventListener('raycaster-intersection-cleared', function (e) {
-  debug.innerHTML = 'CLEARED' + 'e' + e + 'detail' + e.detail + ' ' + JSON.stringify(e.detail) + 'intersections' + e.detail.intersections + 'point' + e.detail.intersections[0].point + ' ' + JSON.stringify(e.detail.intersections[0].point);
+  debug.innerHTML = 'CLEARED' + JSON.stringify(e.detail.intersections[0].point);
   mark.setAttribute('color', 'red');
 });

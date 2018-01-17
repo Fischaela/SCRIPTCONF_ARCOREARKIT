@@ -10,7 +10,7 @@ raycaster.addEventListener('click', function () {
 });
 
 raycaster.addEventListener('raycaster-intersection', function (e) {
-  debug.innerHTML = 'intersection',  'e', e, 'detail', e.detail, 'intersections', e.detail.intersections, 'point', e.detail.intersections[0].point;
+  debug.innerHTML = 'e' + e + 'detail' + e.detail + 'intersections' + e.detail.intersection + 'point' + e.detail.intersections[0].point;
   mark.setAttribute('position', e.detail.intersections[0].point);
   mark.setAttribute('color', 'green');
 });

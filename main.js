@@ -3,7 +3,7 @@ var raycaster = document.querySelector('[ar-raycaster]');
 var mark = document.querySelector('#intersection');
 var debug = document.querySelector('#debug');
 
-raycaster.addEventListener('click', function () {
+window.addEventListener('click', function () {
   var content = `<a-entity io3d-furniture="id:aee3e802-1435-4a89-8e8b-d6057dbf3683" shadow="cast:true"></a-entity>`;
   content.setAttribute('position', raycaster.components.cursor.intersection.point);
   scene.appendChild(content);

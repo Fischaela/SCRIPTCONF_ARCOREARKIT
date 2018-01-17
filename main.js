@@ -4,13 +4,13 @@ var mark = document.querySelector('#intersection');
 var debug = document.querySelector('#debug');
 
 window.addEventListener('click', function () {
-  var content = `<a-entity io3d-furniture="id:aee3e802-1435-4a89-8e8b-d6057dbf3683" shadow="cast:true"></a-entity>`;
+  let content = `<a-entity io3d-furniture="id:cc71c2ff-a01c-459c-aadb-e9ff8d398212"></a-entity>`;
+  let el = document.createElement('a-entity');
+  let position = mark.getAttribute('position');
+
   debug.innerHTML = 'CLICK' +  JSON.stringify(raycaster.components.cursor.intersection.point);
-  var el = document.createElement('a-entity');
   AFRAME.scenes[0].appendChild(el);
-  el.innerHTML = content;
-  var position = mark.getAttribute('position');
-  el.setAttribute('position', position);
+  el.innerHTML = content;  el.setAttribute('position', position);
 });
 
 raycaster.addEventListener('raycaster-intersection', function (e) {

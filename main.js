@@ -10,9 +10,9 @@ raycaster.addEventListener('click', function () {
 
 raycaster.addEventListener('raycaster-intersection', function (e) {
   mark.setAttribute('position', e.detail.intersections[0].point);
-  mark.setAttribute('visible', true);
+  mark.setAttribute('color', 'green');
 });
 
 raycaster.addEventListener('raycaster-intersection-cleared', function () {
-  mark.setAttribute('visible', false);
+  mark.setAttribute('color', 'red');
 });

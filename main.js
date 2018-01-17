@@ -9,7 +9,7 @@ raycaster.addEventListener('click', function () {
 });
 
 raycaster.addEventListener('raycaster-intersection', function (e) {
-  window.alert('intersection',  e.detail.intersections[0].point);
+  window.alert('intersection',  'e', e, 'detail', e.detail, 'intersections', e.detail.intersections, 'point', e.detail.intersections[0].point);
   mark.setAttribute('position', e.detail.intersections[0].point);
   mark.setAttribute('color', 'green');
 });

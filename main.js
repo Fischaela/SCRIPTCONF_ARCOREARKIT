@@ -16,10 +16,10 @@ window.addEventListener('click', function () {
 raycaster.addEventListener('raycaster-intersection', function (e) {
   debug.innerHTML = 'INTERSECTION' + JSON.stringify(e.detail.intersections[0].point);
   mark.setAttribute('position', e.detail.intersections[0].point);
-  mark.setAttribute('color', 'green');
+  mark.setAttribute('visible', true);
 });
 
 raycaster.addEventListener('raycaster-intersection-cleared', function (e) {
   debug.innerHTML = 'CLEARED' + JSON.stringify(e.detail.intersections[0].point);
-  mark.setAttribute('color', 'red');
+  mark.setAttribute('visible', false);
 });

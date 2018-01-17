@@ -8,7 +8,6 @@ window.addEventListener('click', function () {
   let el = document.createElement('a-entity');
   let position = mark.getAttribute('position');
 
-  debug.innerHTML = 'CLICK' +  JSON.stringify(raycaster.components.cursor.intersection.point);
   AFRAME.scenes[0].appendChild(el);
   el.innerHTML = content;  el.setAttribute('position', position);
 });
